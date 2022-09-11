@@ -1,6 +1,6 @@
 {
-  "homepage": "http://jowjow22.github.io/automats-tool/",
-  "name": "javascript-game-engine",
+  "name": "automats-tool",
+  "homepage": "http://jowjow22.github.io/automats-tool",
   "private": true,
   "version": "0.0.0",
   "type": "module",
