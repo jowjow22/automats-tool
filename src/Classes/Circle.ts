@@ -9,11 +9,11 @@ export default class Circle extends GenericObject {
     const p5 = this.p5;
 
     p5.translate(this.pos);
-    p5.noStroke();
+    p5.smooth();
     p5.stroke(this.color);
-    p5.strokeWeight(4);
+    p5.strokeWeight(this.size / 10 - 6);
     p5.noFill();
-    p5.ellipse(0, 0, this.size, this.size);
+    p5.circle(0, 0, this.size);
     p5.fill(this.color);
 
   }

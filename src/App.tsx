@@ -1,5 +1,6 @@
 import P5 from 'p5';
 import { sketch } from './Classes/index'
+import { Frame } from './styles/App.styles';
 
 export const game = new P5(sketch);
 
@@ -7,10 +8,7 @@ export const game = new P5(sketch);
 
 function App() {
   return (
-    <>
-    <div id="App">
-    </div>
-    </>
+    <Frame id="App" />
   )
 }
 

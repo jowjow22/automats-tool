@@ -10,7 +10,7 @@ export const sketch = (p5: P5) => {
 		for(let i = 0; i < 10; i++) {
 			let statePos: P5.Vector;
 			statePos = p5.createVector(Math.random() * 100, Math.random() * 100);
-			state = new State(p5, statePos, 100, "white", `q${i}`);
+			state = new State(p5, statePos, 70, "white", `q${i}`);
 			if(i === 9) {
 				state.isLastState = true;
 			}
@@ -19,7 +19,7 @@ export const sketch = (p5: P5) => {
 		
 
 
-		const canvas = p5.createCanvas(800, 800);
+		const canvas = p5.createCanvas(1000, 915);
 		canvas.parent("App");
 		p5.background("black");
 		console.log(states);

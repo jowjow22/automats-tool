@@ -14,9 +14,11 @@ export default class State extends Circle {
 
     super.draw();
     this.setText();
+    p5.smooth();
     p5.stroke(this.color);
     p5.noFill();
-    p5.ellipse(0, 0, this.size / 1.5, this.size / 1.5);
+    p5.circle(0, 0, this.size / 1.5);
+
 
   }
   draw(): void {
