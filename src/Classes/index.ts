@@ -17,12 +17,6 @@ export const sketch = (p5: P5) => {
 			states.push(state);
 		}
 		
-
-
-		const canvas = p5.createCanvas(1000, 915);
-		canvas.parent("App");
-		p5.background("black");
-		console.log(states);
 	};
 	p5.draw = () => {
 		states.forEach((state: State)=>{
