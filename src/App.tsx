@@ -1,16 +1,15 @@
 import P5 from 'p5';
 import { sketch } from './Classes/index'
-import { Frame } from './styles/App.styles'
+import './styles/global.css'
 
 export let game = new P5(sketch);
-
-
-
 function App() {
+  const call = () => {
+    game.fill(255);
+    game.rect(100, 100, 100)
+  }
   return (
-    <>
-      <Frame id='AppFrame'>asdas</Frame>
-    </>
+    <button onClick={call}>test</button>
   )
 }
 
