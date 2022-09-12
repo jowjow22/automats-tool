@@ -3,15 +3,13 @@ import { useLayoutEffect, useState } from 'react';
 import { sketch } from './Classes/index'
 import { Frame } from './styles/App.styles'
 
-export const game = new P5(sketch);
+export let game: P5;
 
 
 
 function App() {
   useLayoutEffect(()=>{
-    let canvas = game.createCanvas(1000, 915);
-    canvas.parent("AppFrame");
-    game.background("black");
+    game = new P5(sketch);
   }, [])
 
   return (

@@ -6,7 +6,10 @@ export const sketch = (p5: P5) => {
 	let states: Array<State> = [];
 
 	p5.setup = () => {
-
+		let canvas = p5.createCanvas(1000, 915);
+		canvas.parent("AppFrame");
+		p5.background("black");
+		
 		for(let i = 0; i < 10; i++) {
 			let statePos: P5.Vector;
 			statePos = p5.createVector(Math.random() * 100, Math.random() * 100);
